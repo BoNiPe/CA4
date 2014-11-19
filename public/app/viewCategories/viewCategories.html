@@ -1,0 +1,14 @@
+{{categories}}
+<input type="search" ng-model="categoriesfilter" placeholder="Type your search :D">
+<table class="table">
+    <thead>
+    <tr>
+        <td>Categories</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="category in allCategories">
+        <td>{{category.categories}}</td>
+    </tr>
+    </tbody>
+</table>

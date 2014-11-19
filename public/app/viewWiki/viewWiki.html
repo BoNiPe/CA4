@@ -1,0 +1,13 @@
+<ul>
+    <p style="color: red">{{error}}</p>
+    <p><code>Number of wiki's in our database: {{wikis.length}}</code></p>
+    <input type="search" ng-model="wikifilter" placeholder="Type your search :D">
+
+    <table class="table">
+        <tbody>
+        <tr ng-repeat="wiki in wikis | filter: wikifilter track by wiki.title">
+            <td id="wiki._id" ng-click="saveCurrentWiki(wiki)"><a href="#/viewWiki/{{wiki._id}}">{{wiki.title}}</a></td>
+        </tr>
+        </tbody>
+    </table>
+</ul>

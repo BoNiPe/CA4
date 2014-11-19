@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myAppRename" ng-controller="AppCtrl">
+<head>
+  <meta charset="utf8"/>
+  <title>{{title}}</title>
+
+  <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.css">
+
+  <link href="vendor/bootstrap/dist/css/simple-sidebar.css" rel="stylesheet">
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+
+  <div ng-controller="AppCtrl">
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand">
+            <a href="#/viewHome">
+              <h1>BoNiPedia</h1>
+            </a>
+          </li>
+          <li>
+            <a href="#/viewWiki">Wiki</a>
+          </li>
+          <li>
+            <a href="#/viewCategories">Categories</a>
+          </li>
+          <li>
+            <a href="http://en.wikipedia.org">Wikipedia</a>
+          </li>
+        </ul>
+      </div>
+
+  <div class="container">
+    <div ng-view="ng-view"></div>
+  </div>
+</div>
+<script src="vendor/angular/angular.js"></script>
+<script src="vendor/angular-route/angular-route.js"></script>
+<script src="app/app.js"></script>
+<script src="app/viewHome/viewHome.js"></script>
+<script src="app/view2/view2.js"></script>
+<script src="app/viewWiki/viewWiki.js"></script>
+    <script src="app/viewCategories/viewCategories.js"></script>
+<script src="app/components/controllers.js"></script>
+<script src="app/components/directives.js"></script>
+<script src="app/components/factories.js"></script>
+<script src="app/components/services.js"></script>
+<script src="app/components/filters.js"></script>
+</body>
+</html>
